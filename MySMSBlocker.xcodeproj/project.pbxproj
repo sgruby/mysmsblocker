@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D222E94B28E75D970021C219 /* Filter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E94A28E75D970021C219 /* Filter+Extension.swift */; };
+		D2A1C8D728E74CF20038BC61 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1C8D628E74CF20038BC61 /* ListItemView.swift */; };
+		D2CC28C728E8AAF700CEAABF /* HelpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28C628E8AAF700CEAABF /* HelpPageView.swift */; };
+		D2CC28C928E8AC4600CEAABF /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28C828E8AC4600CEAABF /* Bundle+Extensions.swift */; };
+		D2CC28CB28E8AC8200CEAABF /* DefaultFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28CA28E8AC8200CEAABF /* DefaultFilter.swift */; };
+		D2CC28CD28E8ADC000CEAABF /* DefaultList.json in Resources */ = {isa = PBXBuildFile; fileRef = D2CC28CC28E8ADC000CEAABF /* DefaultList.json */; };
+		D2CC28D428E8B74C00CEAABF /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28D128E8B74C00CEAABF /* PageControl.swift */; };
+		D2CC28D528E8B74C00CEAABF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28D228E8B74C00CEAABF /* PageViewController.swift */; };
+		D2CC28D628E8B74C00CEAABF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28D328E8B74C00CEAABF /* PageView.swift */; };
+		D2CC28DE28E8C0C000CEAABF /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC28DD28E8C0C000CEAABF /* HelpView.swift */; };
+		D2E8EC4528E65657004E95E8 /* MySMSBlockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4428E65657004E95E8 /* MySMSBlockerApp.swift */; };
+		D2E8EC4728E65657004E95E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4628E65657004E95E8 /* ContentView.swift */; };
+		D2E8EC4928E65658004E95E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E8EC4828E65658004E95E8 /* Assets.xcassets */; };
+		D2E8EC4C28E65658004E95E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E8EC4B28E65658004E95E8 /* Preview Assets.xcassets */; };
+		D2E8EC4E28E65658004E95E8 /* CloudKitPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4D28E65658004E95E8 /* CloudKitPersistence.swift */; };
+		D2E8EC5128E65658004E95E8 /* MySMSBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4F28E65658004E95E8 /* MySMSBlocker.xcdatamodeld */; };
+		D2E8EC5E28E65692004E95E8 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC5D28E65692004E95E8 /* MessageFilterExtension.swift */; };
+		D2E8EC6228E65692004E95E8 /* MySMSBlockerExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2E8EC5B28E65692004E95E8 /* MySMSBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2E8EC6928E65D33004E95E8 /* MySMSBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4F28E65658004E95E8 /* MySMSBlocker.xcdatamodeld */; };
+		D2E8EC6B28E65D4B004E95E8 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC6A28E65D4B004E95E8 /* URL+Extensions.swift */; };
+		D2E8EC6C28E65D4B004E95E8 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC6A28E65D4B004E95E8 /* URL+Extensions.swift */; };
+		D2F3829D290F363200BCBA46 /* CloudKitPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8EC4D28E65658004E95E8 /* CloudKitPersistence.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2E8EC6028E65692004E95E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2E8EC3928E65657004E95E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2E8EC5A28E65692004E95E8;
+			remoteInfo = MySMSBlockerExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2E8EC6628E65692004E95E8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2E8EC6228E65692004E95E8 /* MySMSBlockerExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D222E94A28E75D970021C219 /* Filter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filter+Extension.swift"; sourceTree = "<group>"; };
+		D222E94C28E76C8F0021C219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D2A1C8D628E74CF20038BC61 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		D2C17F2528E777BD00699282 /* MySMSBlockerExtension-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlockerExtension-Shared.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2628E777BD00699282 /* MySMSBlockerExtension-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlockerExtension-Release.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2728E777BD00699282 /* MySMSBlocker-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlocker-Shared.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2828E777BD00699282 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2928E777BD00699282 /* MySMSBlocker-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlocker-Debug.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2A28E777BD00699282 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2B28E777BD00699282 /* MySMSBlocker-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlocker-Release.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2C28E777BD00699282 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		D2C17F2D28E777BD00699282 /* MySMSBlockerExtension-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "MySMSBlockerExtension-Debug.xcconfig"; sourceTree = "<group>"; };
+		D2C17F4228E778AA00699282 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		D2CC28C628E8AAF700CEAABF /* HelpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPageView.swift; sourceTree = "<group>"; };
+		D2CC28C828E8AC4600CEAABF /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		D2CC28CA28E8AC8200CEAABF /* DefaultFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFilter.swift; sourceTree = "<group>"; };
+		D2CC28CC28E8ADC000CEAABF /* DefaultList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultList.json; sourceTree = "<group>"; };
+		D2CC28D128E8B74C00CEAABF /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		D2CC28D228E8B74C00CEAABF /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D2CC28D328E8B74C00CEAABF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		D2CC28DD28E8C0C000CEAABF /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		D2E8EC4128E65657004E95E8 /* MySMSBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySMSBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E8EC4428E65657004E95E8 /* MySMSBlockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySMSBlockerApp.swift; sourceTree = "<group>"; };
+		D2E8EC4628E65657004E95E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2E8EC4828E65658004E95E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2E8EC4B28E65658004E95E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2E8EC4D28E65658004E95E8 /* CloudKitPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPersistence.swift; sourceTree = "<group>"; };
+		D2E8EC5028E65658004E95E8 /* MySMSBlocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySMSBlocker.xcdatamodel; sourceTree = "<group>"; };
+		D2E8EC5B28E65692004E95E8 /* MySMSBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MySMSBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E8EC5D28E65692004E95E8 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		D2E8EC5F28E65692004E95E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E8EC6728E65AD0004E95E8 /* MySMSBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySMSBlocker.entitlements; sourceTree = "<group>"; };
+		D2E8EC6828E65AE0004E95E8 /* MySMSBlockerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySMSBlockerExtension.entitlements; sourceTree = "<group>"; };
+		D2E8EC6A28E65D4B004E95E8 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2E8EC3E28E65657004E95E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E8EC5828E65692004E95E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2C17F2428E777BD00699282 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				D2C17F4228E778AA00699282 /* Version.xcconfig */,
+				D2C17F2728E777BD00699282 /* MySMSBlocker-Shared.xcconfig */,
+				D2C17F2928E777BD00699282 /* MySMSBlocker-Debug.xcconfig */,
+				D2C17F2B28E777BD00699282 /* MySMSBlocker-Release.xcconfig */,
+				D2C17F2528E777BD00699282 /* MySMSBlockerExtension-Shared.xcconfig */,
+				D2C17F2D28E777BD00699282 /* MySMSBlockerExtension-Debug.xcconfig */,
+				D2C17F2628E777BD00699282 /* MySMSBlockerExtension-Release.xcconfig */,
+				D2C17F2A28E777BD00699282 /* Project-Shared.xcconfig */,
+				D2C17F2828E777BD00699282 /* Project-Release.xcconfig */,
+				D2C17F2C28E777BD00699282 /* Project-Debug.xcconfig */,
+			);
+			path = xcconfig;
+			sourceTree = "<group>";
+		};
+		D2CC28D028E8B74C00CEAABF /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC28D128E8B74C00CEAABF /* PageControl.swift */,
+				D2CC28D228E8B74C00CEAABF /* PageViewController.swift */,
+				D2CC28D328E8B74C00CEAABF /* PageView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		D2E8EC3828E65657004E95E8 = {
+			isa = PBXGroup;
+			children = (
+				D2C17F2428E777BD00699282 /* xcconfig */,
+				D2E8EC4328E65657004E95E8 /* MySMSBlocker */,
+				D2E8EC5C28E65692004E95E8 /* MySMSBlockerExtension */,
+				D2E8EC4228E65657004E95E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2E8EC4228E65657004E95E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2E8EC4128E65657004E95E8 /* MySMSBlocker.app */,
+				D2E8EC5B28E65692004E95E8 /* MySMSBlockerExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2E8EC4328E65657004E95E8 /* MySMSBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				D222E94C28E76C8F0021C219 /* Info.plist */,
+				D2E8EC6728E65AD0004E95E8 /* MySMSBlocker.entitlements */,
+				D2E8EC4428E65657004E95E8 /* MySMSBlockerApp.swift */,
+				D2E8EC4628E65657004E95E8 /* ContentView.swift */,
+				D2A1C8D628E74CF20038BC61 /* ListItemView.swift */,
+				D2CC28C628E8AAF700CEAABF /* HelpPageView.swift */,
+				D2CC28DD28E8C0C000CEAABF /* HelpView.swift */,
+				D2E8EC4828E65658004E95E8 /* Assets.xcassets */,
+				D2CC28CC28E8ADC000CEAABF /* DefaultList.json */,
+				D2E8EC4D28E65658004E95E8 /* CloudKitPersistence.swift */,
+				D222E94A28E75D970021C219 /* Filter+Extension.swift */,
+				D2E8EC6A28E65D4B004E95E8 /* URL+Extensions.swift */,
+				D2CC28C828E8AC4600CEAABF /* Bundle+Extensions.swift */,
+				D2CC28CA28E8AC8200CEAABF /* DefaultFilter.swift */,
+				D2CC28D028E8B74C00CEAABF /* PageView */,
+				D2E8EC4F28E65658004E95E8 /* MySMSBlocker.xcdatamodeld */,
+				D2E8EC4A28E65658004E95E8 /* Preview Content */,
+			);
+			path = MySMSBlocker;
+			sourceTree = "<group>";
+		};
+		D2E8EC4A28E65658004E95E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2E8EC4B28E65658004E95E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2E8EC5C28E65692004E95E8 /* MySMSBlockerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D2E8EC6828E65AE0004E95E8 /* MySMSBlockerExtension.entitlements */,
+				D2E8EC5D28E65692004E95E8 /* MessageFilterExtension.swift */,
+				D2E8EC5F28E65692004E95E8 /* Info.plist */,
+			);
+			path = MySMSBlockerExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2E8EC4028E65657004E95E8 /* MySMSBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E8EC5428E65658004E95E8 /* Build configuration list for PBXNativeTarget "MySMSBlocker" */;
+			buildPhases = (
+				D2E8EC3D28E65657004E95E8 /* Sources */,
+				D2E8EC3E28E65657004E95E8 /* Frameworks */,
+				D2E8EC3F28E65657004E95E8 /* Resources */,
+				D2E8EC6628E65692004E95E8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E8EC6128E65692004E95E8 /* PBXTargetDependency */,
+			);
+			name = MySMSBlocker;
+			productName = MySMSBlocker;
+			productReference = D2E8EC4128E65657004E95E8 /* MySMSBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2E8EC5A28E65692004E95E8 /* MySMSBlockerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E8EC6328E65692004E95E8 /* Build configuration list for PBXNativeTarget "MySMSBlockerExtension" */;
+			buildPhases = (
+				D2E8EC5728E65692004E95E8 /* Sources */,
+				D2E8EC5828E65692004E95E8 /* Frameworks */,
+				D2E8EC5928E65692004E95E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySMSBlockerExtension;
+			productName = MySMSBlockerExtension;
+			productReference = D2E8EC5B28E65692004E95E8 /* MySMSBlockerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2E8EC3928E65657004E95E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D2E8EC4028E65657004E95E8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D2E8EC5A28E65692004E95E8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D2E8EC3C28E65657004E95E8 /* Build configuration list for PBXProject "MySMSBlocker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2E8EC3828E65657004E95E8;
+			productRefGroup = D2E8EC4228E65657004E95E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2E8EC4028E65657004E95E8 /* MySMSBlocker */,
+				D2E8EC5A28E65692004E95E8 /* MySMSBlockerExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2E8EC3F28E65657004E95E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC28CD28E8ADC000CEAABF /* DefaultList.json in Resources */,
+				D2E8EC4C28E65658004E95E8 /* Preview Assets.xcassets in Resources */,
+				D2E8EC4928E65658004E95E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E8EC5928E65692004E95E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2E8EC3D28E65657004E95E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D222E94B28E75D970021C219 /* Filter+Extension.swift in Sources */,
+				D2E8EC5128E65658004E95E8 /* MySMSBlocker.xcdatamodeld in Sources */,
+				D2E8EC4E28E65658004E95E8 /* CloudKitPersistence.swift in Sources */,
+				D2CC28DE28E8C0C000CEAABF /* HelpView.swift in Sources */,
+				D2CC28D528E8B74C00CEAABF /* PageViewController.swift in Sources */,
+				D2CC28D628E8B74C00CEAABF /* PageView.swift in Sources */,
+				D2CC28CB28E8AC8200CEAABF /* DefaultFilter.swift in Sources */,
+				D2CC28C928E8AC4600CEAABF /* Bundle+Extensions.swift in Sources */,
+				D2E8EC6B28E65D4B004E95E8 /* URL+Extensions.swift in Sources */,
+				D2A1C8D728E74CF20038BC61 /* ListItemView.swift in Sources */,
+				D2CC28C728E8AAF700CEAABF /* HelpPageView.swift in Sources */,
+				D2CC28D428E8B74C00CEAABF /* PageControl.swift in Sources */,
+				D2E8EC4728E65657004E95E8 /* ContentView.swift in Sources */,
+				D2E8EC4528E65657004E95E8 /* MySMSBlockerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E8EC5728E65692004E95E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E8EC6928E65D33004E95E8 /* MySMSBlocker.xcdatamodeld in Sources */,
+				D2E8EC6C28E65D4B004E95E8 /* URL+Extensions.swift in Sources */,
+				D2F3829D290F363200BCBA46 /* CloudKitPersistence.swift in Sources */,
+				D2E8EC5E28E65692004E95E8 /* MessageFilterExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2E8EC6128E65692004E95E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2E8EC5A28E65692004E95E8 /* MySMSBlockerExtension */;
+			targetProxy = D2E8EC6028E65692004E95E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2E8EC5228E65658004E95E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2C28E777BD00699282 /* Project-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2E8EC5328E65658004E95E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2828E777BD00699282 /* Project-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2E8EC5528E65658004E95E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2928E777BD00699282 /* MySMSBlocker-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D2E8EC5628E65658004E95E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2B28E777BD00699282 /* MySMSBlocker-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D2E8EC6428E65692004E95E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2D28E777BD00699282 /* MySMSBlockerExtension-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D2E8EC6528E65692004E95E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C17F2628E777BD00699282 /* MySMSBlockerExtension-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2E8EC3C28E65657004E95E8 /* Build configuration list for PBXProject "MySMSBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E8EC5228E65658004E95E8 /* Debug */,
+				D2E8EC5328E65658004E95E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E8EC5428E65658004E95E8 /* Build configuration list for PBXNativeTarget "MySMSBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E8EC5528E65658004E95E8 /* Debug */,
+				D2E8EC5628E65658004E95E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E8EC6328E65692004E95E8 /* Build configuration list for PBXNativeTarget "MySMSBlockerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E8EC6428E65692004E95E8 /* Debug */,
+				D2E8EC6528E65692004E95E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2E8EC4F28E65658004E95E8 /* MySMSBlocker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2E8EC5028E65658004E95E8 /* MySMSBlocker.xcdatamodel */,
+			);
+			currentVersion = D2E8EC5028E65658004E95E8 /* MySMSBlocker.xcdatamodel */;
+			path = MySMSBlocker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2E8EC3928E65657004E95E8 /* Project object */;
+}

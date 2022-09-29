@@ -1,0 +1,67 @@
+[
+  {
+    "match": "Congress",
+    "allow": false,
+    "sender": false
+  },
+  {
+    "match": "Republican",
+    "allow": false,
+    "sender": false
+  },
+  {
+    "match": "Democrat",
+    "allow": false,
+    "sender": false
+  },
+  {
+      "match": "Winner",
+      "allow": false,
+      "sender": false
+  },
+  {
+      "match": "Refund",
+      "allow": false,
+      "sender": false
+  },
+  {
+      "match": "Giveaway",
+      "allow": false,
+      "sender": false
+  },
+  {
+      "match": "Claim",
+      "allow": false,
+      "sender": false
+  },
+  {
+      "match": "Taxes",
+      "allow": false,
+      "sender": false
+  },
+  {
+    "match": "Apple ID Code",
+    "allow": true,
+    "sender": false
+  },
+  {
+    "match": "Costco Pharmacy",
+    "allow": true,
+    "sender": false
+  },
+  {
+    "match": "Citi Alert",
+    "allow": true,
+    "sender": false
+  },
+  {
+    "match": "Citi ID Code",
+    "allow": true,
+    "sender": false
+  },
+  {
+    "match": "Home Depot code",
+    "allow": true,
+    "sender": false
+  }
+]
